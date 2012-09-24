@@ -22,8 +22,8 @@ SET(CMAKE_C_COMPILER "${CMAKE_CXX_COMPILER}")
 # ---------------------------------------------------
 # Configuracion
 # ---------------------------------------------------
-set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -ansi -fPIC -pedantic -Wall ")
-set (CMAKE_C_FLAGS "${CMAKE_CXX_FLAGS} -ansi -fPIC -pedantic -Wall -Werror-implicit-function-declaration -Wno-write-strings")
+set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -ansi -fPIC -pedantic -Wall -fpermissive ")
+set (CMAKE_C_FLAGS "${CMAKE_CXX_FLAGS} -ansi -fPIC -pedantic -Wall -Werror-implicit-function-declaration -Wno-write-strings -fpermissive")
 #set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}  -fPIC  ")
 #set (CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -fPIC  -Werror-implicit-function-declaration")
 #set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -o0 -g -pg -finstrument-functions")

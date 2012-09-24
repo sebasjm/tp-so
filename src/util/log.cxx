@@ -7,6 +7,8 @@
 #include <stdio.h>
 #include <pthread.h>
 #include <so_agnostic.h>
+       #include <sys/types.h>
+       #include <unistd.h>
 
 using namespace std;
 

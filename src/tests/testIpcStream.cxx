@@ -9,6 +9,7 @@
 #include <string>
 #include <vector>
 #include <algorithm>
+       #include <unistd.h>
 
 #include <util/log_ansi.h>
 #define modulo "testIpcStream"
