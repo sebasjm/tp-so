@@ -1,0 +1,167 @@
+<!-- diego : deadlock-->
+
+<job id="job7">
+	<target>
+		<hash>078c007bd92ddec308ae2f5115c1775d</hash>
+		<method>MD5</method>
+		<length>5</length>
+	</target>
+	<tasks>
+		<task>
+			<task-id>task1</task-id>
+			<task-description>desc</task-description>
+		    <resources>
+				<resource name="disk"   value="100MB" />
+				<resource name="memory" value="50MB" />
+				<resource name="cpu"    value="5" />
+			</resources>
+			<dependencies>
+			</dependencies>
+		</task>
+		<task>
+            <task-id>task2</task-id>
+            <task-description>desc</task-description>
+            <resources>
+                <resource name="disk"   value="50MB" />
+                <resource name="memory" value="100MB" />
+                <resource name="cpu"    value="5" />
+            </resources>
+            <dependencies>
+            </dependencies>
+        </task>
+        <task>
+            <task-id>task3</task-id>
+            <task-description>desc</task-description>
+            <resources>
+                <resource name="disk"   value="100MB" />
+                <resource name="memory" value="50MB" />
+                <resource name="cpu"    value="5" />
+            </resources>
+            <dependencies>
+            </dependencies>
+        </task>
+		<task>
+            <task-id>task4</task-id>
+            <task-description>desc</task-description>
+            <resources>
+                <resource name="disk"   value="60MB" />
+                <resource name="memory" value="50MB" />
+                <resource name="cpu"    value="5" />
+            </resources>
+            <dependencies>
+            </dependencies>
+        </task>
+		<task>
+            <task-id>task5</task-id>
+            <task-description>desc</task-description>
+            <resources>
+                <resource name="disk"   value="1MB" />
+                <resource name="memory" value="1MB" />
+                <resource name="cpu"    value="5" />
+            </resources>
+            <dependencies>
+            </dependencies>
+        </task>
+		<task>
+            <task-id>task6</task-id>
+            <task-description>desc</task-description>
+            <resources>
+                <resource name="disk"   value="10MB" />
+                <resource name="memory" value="1MB" />
+                <resource name="cpu"    value="5" />
+            </resources>
+            <dependencies>
+            </dependencies>
+        </task>
+		<task>
+            <task-id>task7</task-id>
+            <task-description>desc</task-description>
+            <resources>
+                <resource name="disk"   value="1MB" />
+                <resource name="memory" value="10MB" />
+                <resource name="cpu"    value="5" />
+            </resources>
+            <dependencies>
+            </dependencies>
+        </task>
+		<task>
+            <task-id>task8</task-id>
+            <task-description>desc</task-description>
+            <resources>
+                <resource name="disk"   value="1MB" />
+                <resource name="memory" value="1MB" />
+                <resource name="cpu"    value="5" />
+            </resources>
+            <dependencies>
+            </dependencies>
+        </task>
+		<task>
+            <task-id>task9</task-id>
+            <task-description>desc</task-description>
+            <resources>
+                <resource name="disk"   value="1MB" />
+                <resource name="memory" value="1MB" />
+                <resource name="cpu"    value="50" />
+            </resources>
+            <dependencies>
+                <dependency ref="task1" />
+				<dependency ref="task2" />
+				<dependency ref="task3" />
+				<dependency ref="task4" />
+				<dependency ref="task5" />
+				<dependency ref="task6" />
+				<dependency ref="task7" />
+				<dependency ref="task8" />
+            </dependencies>
+        </task>
+		<task>
+            <task-id>task10</task-id>
+            <task-description>desc</task-description>
+            <resources>
+                <resource name="disk"   value="1MB" />
+                <resource name="memory" value="1MB" />
+                <resource name="cpu"    value="50" />
+            </resources>
+            <dependencies>
+                <dependency ref="task9" />
+            </dependencies>
+        </task>
+		<task>
+            <task-id>task11</task-id>
+            <task-description>desc</task-description>
+            <resources>
+                <resource name="disk"   value="1MB" />
+                <resource name="memory" value="1MB" />
+                <resource name="cpu"    value="50" />
+            </resources>
+            <dependencies>
+                <dependency ref="task10" />
+            </dependencies>
+        </task>
+		<task>
+            <task-id>task12</task-id>
+            <task-description>desc</task-description>
+            <resources>
+                <resource name="disk"   value="1MB" />
+                <resource name="memory" value="1MB" />
+                <resource name="cpu"    value="50" />
+            </resources>
+            <dependencies>
+                <dependency ref="task10" />
+            </dependencies>
+        </task>
+		<task>
+            <task-id>task13</task-id>
+            <task-description>desc</task-description>
+            <resources>
+                <resource name="disk"   value="1MB" />
+                <resource name="memory" value="1MB" />
+                <resource name="cpu"    value="50" />
+            </resources>
+            <dependencies>
+                <dependency ref="task10" />
+				<dependency ref="task11" />
+            </dependencies>
+        </task>
+	</tasks>
+</job>

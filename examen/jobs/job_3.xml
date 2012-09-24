@@ -1,0 +1,34 @@
+<!-- zz99 -->
+
+<job id="job3">
+	<target>
+		<hash>611d3fc49c05477b6bd3bd72500f492c</hash>
+		<method>MD5</method>
+		<length>4</length>
+	</target>
+	<tasks>
+		<task>
+			<task-id>task1</task-id>
+			<task-description>desc</task-description>
+		    <resources>
+				<resource name="disk"   value="1MB" />
+				<resource name="memory" value="1MB" />
+				<resource name="cpu"    value="60" />
+			</resources>
+			<dependencies>
+			</dependencies>
+		</task>
+		<task>
+            <task-id>task2</task-id>
+            <task-description>desc</task-description>
+            <resources>
+                <resource name="disk"   value="1MB" />
+                <resource name="memory" value="1MB" />
+                <resource name="cpu"    value="60" />
+            </resources>
+            <dependencies>
+                <dependency ref="task1" />
+            </dependencies>
+        </task>
+	</tasks>
+</job>

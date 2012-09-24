@@ -1,0 +1,12 @@
+* Para generar los Makefile
+
+make gen
+
+* Para compilar
+
+make
+
+* Para ejecutar tests
+
+make test
+

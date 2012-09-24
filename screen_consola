@@ -1,0 +1,11 @@
+hardstatus alwayslastline
+hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B} %d/%m %{W}%c %{g}]'
+shell -/bin/bash
+split
+vert_split
+screen 1 bash -l -c "watch -tn 1 \"ps -fea | grep build\""
+focus
+screen 1 bash -l -c "watch -tn 1 \"netstat -na | grep 20\""
+focus
+screen 1 
+redize 20

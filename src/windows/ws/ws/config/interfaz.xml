@@ -1,0 +1,13 @@
+<config 
+    daemon.bin="./build/node/daemon/daemon.bin"
+    nodo_config_dir="./config/nodos/"
+    ayuda="Comando invalido. Uso: |
+    nombre-nodo start     - inicia el nodo nombre-nodo |
+    nombre-nodo stop      - detiene el nodo nombre-nodo |
+    nombre-nodo display   - muestra el estado del nodo nombre-nodo |
+    exit                  - termina la sesion |
+    list                  - lista nodos posibles |
+    running               - lista nodos en ejecucion |
+    "
+    /> 
+

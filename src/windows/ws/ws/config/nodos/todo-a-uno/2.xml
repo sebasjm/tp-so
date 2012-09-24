@@ -1,0 +1,13 @@
+<config 
+    mi_ip="127.0.0.1"
+    mi_puerto="2220"
+	mi_nombre="nodo2"
+
+    nodo_ip="127.0.0.1"
+    nodo_port="2210"
+	nodo_name="nodo1"
+
+	recursos_memoria="12MB"
+	recursos_disco="1GB"
+refresh_time="4"
+/>

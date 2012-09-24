@@ -1,0 +1,13 @@
+<config 
+    mi_ip="127.0.0.1"
+    mi_puerto="2360"
+	mi_nombre="nodo6"
+    
+    nodo_ip="127.0.0.1"
+    nodo_port="2350"
+	nodo_name="nodo5"
+    
+	recursos_memoria="20MB"
+	recursos_disco="2GB"
+refresh_time="4"
+/>

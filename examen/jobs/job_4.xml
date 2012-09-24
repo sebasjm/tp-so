@@ -1,0 +1,22 @@
+<!-- 2010 -->
+
+<job id="job4">
+	<target>
+		<hash>d7a84628c025d30f7b2c52c958767e76</hash>
+		<method>MD5</method>
+		<length>4</length>
+	</target>
+	<tasks>
+		<task>
+			<task-id>task1</task-id>
+			<task-description>desc</task-description>
+		    <resources>
+				<resource name="disk"   value="1MB" />
+				<resource name="memory" value="1MB" />
+				<resource name="cpu"    value="3" />
+			</resources>
+			<dependencies>
+			</dependencies>
+		</task>
+	</tasks>
+</job>

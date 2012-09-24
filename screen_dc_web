@@ -1,0 +1,13 @@
+hardstatus alwayslastline
+hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B} %d/%m %{W}%c %{g}]'
+shell -/bin/bash
+
+vert_split
+
+screen 1 bash -l -c "while (true); do tail -f log/webserver-$(cat ws.pid 2> /dev/null).log 2> /dev/null | grep --line-buffered -v DEBUG | colrm 1 50; sleep 1; done"
+title webserver
+focus
+
+screen 1 bash -l -c "while (true); do tail -f log/dc_main-$(cat dc.pid 2> /dev/null).log 2> /dev/null | grep --line-buffered -v DEBUG | colrm 1 50; sleep 1; done"
+title dc
+focus

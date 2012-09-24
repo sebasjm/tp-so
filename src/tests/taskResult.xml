@@ -1,0 +1,6 @@
+<taskResult task="taskid" parent="job1"> 
+<result> 
+  <status>TASK_FAIL</status> 
+  <value>DDDDDF</value> 
+</result> 
+</taskResult> 

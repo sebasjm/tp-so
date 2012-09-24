@@ -1,0 +1,19 @@
+hardstatus alwayslastline
+hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B} %d/%m %{W}%c %{g}]'
+shell -/bin/bash
+vert_split
+vert_split
+vert_split
+
+screen 1 bash -l -c "while (true); do tail -f log/daemon_nodo1-$(cat nodo1.pid 2> /dev/null ).log 2> /dev/null | grep --line-buffered -v DEBUG | colrm 1 50; sleep 1; done"
+title nodo1
+focus
+screen 1 bash -l -c "while (true); do tail -f log/daemon_nodo2-$(cat nodo2.pid 2> /dev/null ).log 2> /dev/null | grep --line-buffered -v DEBUG | colrm 1 50; sleep 1; done"
+title nodo2
+focus
+screen 1 bash -l -c "while (true); do tail -f log/daemon_nodo3-$(cat nodo3.pid 2> /dev/null ).log 2> /dev/null | grep --line-buffered -v DEBUG | colrm 1 50; sleep 1; done"
+title nodo3
+focus
+screen 1 bash -l -c "while (true); do tail -f log/daemon_nodo4-$(cat nodo4.pid 2> /dev/null ).log 2> /dev/null | grep --line-buffered -v DEBUG | colrm 1 50; sleep 1; done"
+title nodo4
+focus

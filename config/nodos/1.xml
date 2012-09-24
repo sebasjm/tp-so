@@ -1,0 +1,14 @@
+<config 
+    mi_ip="127.0.0.1"
+    mi_puerto="2010"
+	mi_nombre="nodo1"
+    
+    nodo_ip="127.0.0.1"
+    nodo_port="9999"
+	nodo_name=""
+    
+	recursos_memoria="2kb"
+	recursos_disco="4kB"
+    refresh_time="4"
+    time_working="4"
+/>

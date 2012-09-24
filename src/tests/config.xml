@@ -1,0 +1,8 @@
+<config 
+    id="job1"
+    ip="0.0.0.0"
+    puerto="8080"
+    webserver.dir="/tmp"
+    webserver.temp="/tmp/algo"
+    /> 
+

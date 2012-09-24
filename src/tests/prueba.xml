@@ -1,0 +1,61 @@
+<job id="prueba-1"> 
+<target> 
+    <hash>6395ebd0f4b478145ecfbaf939454fa4</hash> 
+    <method>MD5</method> 
+    <length>4</length> 
+</target> 
+<tasks> 
+    <task> 
+      <task-id>task1</task-id> 
+      <task-description>This is the first task</task-description> 
+      <resources> 
+          <resource name="disk"   value="512MB" /> 
+          <resource name="memory" value="250MB" /> 
+          <resource name="cpu"    value="30"   /> 
+      </resources> 
+    </task> 
+    <task> 
+      <task-id>task2</task-id> 
+      <task-description>This is the first task</task-description> 
+      <resources> 
+          <resource name="disk"   value="512MB" /> 
+          <resource name="memory" value="250MB" /> 
+          <resource name="cpu"    value="30"   /> 
+      </resources> 
+    </task> 
+    <task> 
+      <task-id>task3</task-id> 
+      <task-description>This is the first task</task-description> 
+      <resources> 
+          <resource name="disk"   value="512MB" /> 
+          <resource name="memory" value="250MB" /> 
+          <resource name="cpu"    value="30"   /> 
+      </resources> 
+    </task> 
+    <task> 
+      <task-id>task4</task-id> 
+      <task-description>This is the first task</task-description> 
+      <resources> 
+          <resource name="disk"   value="512MB" /> 
+          <resource name="memory" value="250MB" /> 
+          <resource name="cpu"    value="30"   /> 
+      </resources> 
+    </task> 
+    <task> 
+      <task-id>task5</task-id> 
+      <task-description>This is the first task</task-description> 
+      <resources> 
+          <resource name="disk"   value="512MB" /> 
+          <resource name="memory" value="250MB" /> 
+          <resource name="cpu"    value="30"   /> 
+      </resources> 
+            <dependencies>
+                <dependency ref="task1" />
+                <dependency ref="task2" />
+                <dependency ref="task3" />
+                <dependency ref="task4" />
+            </dependencies>
+    </task> 
+</tasks> 
+</job> 
+

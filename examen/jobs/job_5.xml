@@ -1,0 +1,22 @@
+
+<!-- diego -->
+<job id="job5">
+	<target>
+		<hash>078c007bd92ddec308ae2f5115c1775d</hash>
+		<method>MD5</method>
+		<length>4</length>
+	</target>
+	<tasks>
+		<task>
+			<task-id>task1</task-id>
+			<task-description>desc</task-description>
+		    <resources>
+				<resource name="disk"   value="1MB" />
+				<resource name="memory" value="1MB" />
+				<resource name="cpu"    value="10" />
+			</resources>
+			<dependencies>
+			</dependencies>
+		</task>
+	</tasks>
+</job>

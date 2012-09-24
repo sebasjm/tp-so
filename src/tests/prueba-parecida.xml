@@ -1,0 +1,44 @@
+<job id="job3"> 
+<target> 
+    <hash>6e023d8b8758f8f826152de77a3cc1d9</hash> 
+    <method>MD5</method> 
+    <length>6</length> 
+</target> 
+<tasks> 
+    <task> 
+      <task-id>task1</task-id> 
+      <task-description>This is the first task</task-description> 
+      <resources> 
+          <resource name="disk"   value="512MB" /> 
+          <resource name="memory" value="250MB" /> 
+          <resource name="cpu"    value="300"   /> 
+      </resources> 
+      <dependencies> 
+          <dependency ref="task2" /> 
+          <dependency ref="task3" /> 
+      </dependencies> 
+    </task> 
+    <task> 
+      <task-id>task2</task-id> 
+      <task-description>This is the first task</task-description> 
+      <resources> 
+          <resource name="disk"   value="512MB" /> 
+          <resource name="memory" value="250MB" /> 
+          <resource name="cpu"    value="400"   /> 
+      </resources> 
+    </task> 
+    <task> 
+      <task-id>task3</task-id> 
+      <task-description>This is the first task</task-description> 
+      <resources> 
+          <resource name="disk"   value="512MB" /> 
+          <resource name="memory" value="250MB" /> 
+          <resource name="cpu"    value="300"   /> 
+      </resources> 
+      <dependencies> 
+          <dependency ref="task2" /> 
+      </dependencies> 
+    </task> 
+</tasks> 
+</job> 
+

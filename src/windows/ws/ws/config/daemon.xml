@@ -1,0 +1,4 @@
+<config 
+    dc_main.bin="./build/node/dc/dc_main.bin"
+    /> 
+
